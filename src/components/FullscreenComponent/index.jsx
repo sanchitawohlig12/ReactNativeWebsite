@@ -7,7 +7,6 @@ import {
   ScrollView,
   FlatList,
   Platform,
-  Text,
 } from "react-native";
 import ClearIcon from "../../images/icons/ClearIcon/index";
 import GrayBackIcon from "../../images/icons/GrayBackIcon/index";
@@ -27,7 +26,6 @@ import ChocolateIcon from "../../images/icons/ChocolateIcon/index";
 import AlmondIcon from "../../images/icons/AlmondIcon/index";
 import Buttorscotch from "../../images/icons/Buttorscotch/index";
 import WipeBerryIcon from "../../images/icons/WipeBerryIcon/index";
-// Helper function to split an array into chunks
 const chunkArray = (array, chunkSize) => {
   const result = [];
   for (let i = 0; i < array.length; i += chunkSize) {
@@ -82,47 +80,43 @@ const FullscreenComponent = ({ onClose }) => {
       titleofSub: "Snickers Peanut Chocolate Bar",
       quantity: "250g",
       cost: "",
-      icon: <ChocolateIcon width={30} height={30} />
+      icon: <ChocolateIcon width={30} height={30} />,
     },
     {
       id: 2,
       titleofSub: "Snickers Almond Chocolate Bar - 22g",
       quantity: "200g",
       cost: "",
-      icon:  <AlmondIcon width={30} height={30} />
-
+      icon: <AlmondIcon width={30} height={30} />,
     },
     {
       id: 3,
       titleofSub: "Snickers Butterscotch Chocolate Bar - 22g",
       quantity: "150g",
       cost: "",
-      icon:  <Buttorscotch width={30} height={30} />
-
+      icon: <Buttorscotch width={30} height={30} />,
     },
     {
-        id: 4,
-        titleofSub: "Snickers Berry Whip Chocolate Bar With  - 20gougat & Caramel",
-        quantity: "150g",
-        cost: "",
-        icon:  <WipeBerryIcon width={30} height={30} />
-  
-      },
+      id: 4,
+      titleofSub:
+        "Snickers Berry Whip Chocolate Bar With  - 20gougat & Caramel",
+      quantity: "150g",
+      cost: "",
+      icon: <WipeBerryIcon width={30} height={30} />,
+    },
     {
       id: 5,
       titleofSub: "Minute Maid Minute Maid Pulpy Orange Juice - Ready-To-Serve",
       quantity: "250g",
       cost: "₹24",
-      icon: <MangoIcon width={50} height={50} />
-
+      icon: <MangoIcon width={50} height={50} />,
     },
     {
       id: 6,
       titleofSub: "Minute Maid Minute Maid Pulpy Mango Juice - Ready-To-Serve",
       quantity: "200g",
       cost: "₹34",
-      icon: <MangoIcon width={50} height={50} />
-
+      icon: <MangoIcon width={50} height={50} />,
     },
     {
       id: 7,
@@ -130,31 +124,28 @@ const FullscreenComponent = ({ onClose }) => {
         "Minute Maid Minute Maid Pulpy Pineapple Juice - Ready-To-Serve",
       quantity: "150g",
       cost: "₹40",
-      icon: <MangoIcon width={50} height={50} />
-
+      icon: <MangoIcon width={50} height={50} />,
     },
     {
       id: 8,
       titleofSub: "Snickers Peanut Chocolate Bar",
       quantity: "250g",
       cost: "₹24",
-      icon:  <ChocolateIcon width={50} height={50} />
+      icon: <ChocolateIcon width={50} height={50} />,
     },
     {
       id: 9,
       titleofSub: "Snickers Peanut Chocolate Bar",
       quantity: "200g",
       cost: "₹34",
-      icon: <ChocolateIcon width={50} height={50} />
-
+      icon: <ChocolateIcon width={50} height={50} />,
     },
     {
       id: 10,
       titleofSub: "Snickers Peanut Chocolate Bar",
       quantity: "150g",
       cost: "₹40",
-      icon: <ChocolateIcon width={50} height={50} />
-
+      icon: <ChocolateIcon width={50} height={50} />,
     },
   ];
   const filteredSubcategories = useMemo(() => {
@@ -240,7 +231,7 @@ const styles = StyleSheet.create({
     borderColor: "#ddd",
     paddingHorizontal: 10,
     marginHorizontal: 15,
-    marginTop: Platform.OS === 'ios' ? 60 : 30,
+    marginTop: Platform.OS === "ios" ? 60 : 30,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.12,
@@ -258,7 +249,7 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
     shadowColor: "#000",
-    
+
     maxHeight: "85%",
   },
   inputContainer: {
@@ -271,7 +262,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     paddingVertical: 10,
     paddingHorizontal: 5,
-    color:'black'
+    color: "black",
   },
   icon: {
     padding: 10,

@@ -42,10 +42,7 @@ const RenderSubcategory = ({ item }) => {
               >
                 {item.titleofSub}
               </Text>
-              <View style={styles.subcategoryItem}>
-                {item.icon}
-              
-              </View>
+              <View style={styles.subcategoryItem}>{item.icon}</View>
             </View>
             <View
               style={{
@@ -55,7 +52,9 @@ const RenderSubcategory = ({ item }) => {
                 paddingTop: 20,
               }}
             >
-              <Text style={{ fontSize: 18, fontWeight: "bold",color:'#2A2A2A' }}>
+              <Text
+                style={{ fontSize: 18, fontWeight: "bold", color: "#2A2A2A" }}
+              >
                 {item.quantity}
               </Text>
               <View
@@ -65,7 +64,9 @@ const RenderSubcategory = ({ item }) => {
                   alignItems: "center",
                 }}
               >
-                <Text style={{ fontSize: 18, fontWeight: "bold",color:'#2A2A2A' }}>
+                <Text
+                  style={{ fontSize: 18, fontWeight: "bold", color: "#2A2A2A" }}
+                >
                   {item.cost}
                 </Text>
                 <TouchableOpacity style={styles.buttonBorder}>
@@ -94,12 +95,9 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   buttonBorder: {
-    // borderWidth:1,
-    // borderColor:'#80B918',
     alignItems: "center",
     justifyContent: "center",
-    // marginTop: 20,
-    // Add shadow for iOS
+
     shadowColor: "#0000001F",
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.4,
@@ -108,7 +106,6 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     borderRadius: 5,
     backgroundColor: "#FFFFFF",
-    // Add elevation for Android
     elevation: 4,
     marginLeft: 10,
   },
@@ -135,9 +132,9 @@ const styles = StyleSheet.create({
   shadow: {
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 5.44 },
-    shadowOpacity: 0.25, // 0.25 corresponds to 40% opacity
+    shadowOpacity: 0.25,
     shadowRadius: 8,
-    elevation: 5, // For Android
+    elevation: 5,
     width: "100%",
     backgroundColor: "white",
 

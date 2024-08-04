@@ -117,10 +117,8 @@ const App = () => {
     }
   };
 
-  // Create an array of FlatList components using a for loop
   const flatLists = [];
   for (let i = 0; i < 4; i++) {
-    // Adjust the loop for the number of duplicates you want
     flatLists.push(
       <FlatList
         key={i}
